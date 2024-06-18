@@ -75,7 +75,7 @@ function CrearCuerpoEducativo() {
   }
 
   const selectTipoVehiculo = () => {
-    fetch(`${URL_API}/select/tipo_vehiculo`)
+    fetch(`${URL_API}/select/vehiculo`)
       .then(resp => resp.json())
       .then((result: iLTipoVehiculo[]) => {
         setTipoVehiculoSelect({
@@ -382,7 +382,7 @@ function CrearCuerpoEducativo() {
               label="Placa"
               placeholder=''
               autoComplete='off'
-              inputProps={{ maxLength: 6 }}
+              inputProps={{ maxLength: 7 }}
               value={formValues.PLACA}
               onChange={handleChange}
             />
