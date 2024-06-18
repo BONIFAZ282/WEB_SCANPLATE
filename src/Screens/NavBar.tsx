@@ -89,6 +89,11 @@ function Navbar() {
             icon={faUserSlash}
           />
           <ItemSubCategory
+            link="/mantenimiento/cuerpo_educativo"
+            title="Cuerpo Educatico"
+            icon={faUserCog}
+          />
+          <ItemSubCategory
             link="/mantenimiento/privilegios"
             title="Privilegios"
             icon={faUserShield}

@@ -13,6 +13,7 @@ import CrearPrivilegio from "./Screens/Mantenimiento/CrearPrivilegio";
 import CrearCategoria from "./Screens/Mantenimiento/CrearCategoria";
 import CrearTipoVehiculo from "./Screens/Mantenimiento/CrearTipoVehiculo";
 import UsuariosEliminados from "./Screens/Mantenimiento/UsuariosEliminados";
+import CrearCuerpoEducativo from "./Screens/Mantenimiento/CrearCuerpoEducativo";
 
 import PlacasEscaneadas from "./Screens/Reporte/PlacasEscaneadas";
 
@@ -37,9 +38,13 @@ function App() {
             path={`${folderDefault}/mantenimiento/usuarios`}
             element={<PrivateRoute onlyAdmin={true} element={<DrawerContent element={<CrearUsuario />} title="Usuario" />} />}
           ></Route>
-                    <Route
+          <Route
             path={`${folderDefault}/mantenimiento/usuarios/eliminados`}
             element={<PrivateRoute onlyAdmin={true} element={<DrawerContent element={<UsuariosEliminados />} title="Usuarios Eliminados" />} />}
+          ></Route>
+          <Route
+            path={`${folderDefault}/mantenimiento/cuerpo_educativo`}
+            element={<PrivateRoute onlyAdmin={true} element={<DrawerContent element={<CrearCuerpoEducativo />} title="Cuerpo Educativo" />} />}
           ></Route>
           <Route
             path={`${folderDefault}/mantenimiento/privilegios`}

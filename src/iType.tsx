@@ -6,7 +6,6 @@ interface iResponse {
   data: any[];
 }
 
-
 interface iLUsuarios {
   ID_USUARIO: string;
   ID_PERSONA: string;
@@ -42,7 +41,6 @@ interface iLCliente {
   ESTADO: string;
 }
 
-
 interface iLTrabajador {
   ID_TRABAJADOR: string;
   NOMBRES: string;
@@ -65,11 +63,27 @@ interface iLCategoria {
   ESTADO: string;
 }
 
-
 interface iLTipoVehiculo {
   ID_TIPO_VEHICULO: string;
   NOM_TIPO_VEHICULO: string;
   ESTADO: string;
+}
+
+interface iLCuerpoEducativo {
+  ID_CUERPO_EDUCATIVO: string;
+  ID_PERSONA: string;
+  NOMBRES: string;
+  APPATERNO: string;
+  APMATERNO: string;
+  DOCUMENTO: string;
+  CODIGO: string;
+  ID_CATEGORIA: string;
+  NOM_CATEGORIA: string;
+  ID_TIPO_VEHICULO: string;
+  NOM_TIPO_VEHICULO: string;
+  PLACA: string;
+  ESTADO: string;
+  CONTRASENIA: string;
 }
 
 interface iLPlacaList {
@@ -116,7 +130,6 @@ interface iCategoryData {
   cantidad: number;
 }
 
-
 interface iLAnio {
   ANIO: string;
 }
@@ -136,5 +149,6 @@ export type {
   iMonthlyData,
   iYearlyData,
   iVehicleTypeData,
-  iCategoryData
+  iCategoryData,
+  iLCuerpoEducativo
 };
